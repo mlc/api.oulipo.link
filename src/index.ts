@@ -17,7 +17,7 @@ const cdn_prefix = process.env['OULIPO_CDN_PREFIX'];
 const chars = 'abcdfghjijklmnopqrstuvwxyzABCDFGHIJKLMNOPQRSTUVWXYZ0123456789';
 
 const randomChar = async (): Promise<string> =>
-  chars[await secureRandomNumber(0, chars.length)];
+  chars[await secureRandomNumber(0, chars.length - 1)];
 
 const generate = (): Promise<string> =>
   Promise.all(new Array(6).fill(0).map(randomChar)).then((chars) =>
