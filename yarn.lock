@@ -1537,6 +1537,11 @@
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
 
+"@tsconfig/node14@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@tsconfig/node14/-/node14-1.0.0.tgz#5bd046e508b1ee90bc091766758838741fdefd6e"
+  integrity sha512-RKkL8eTdPv6t5EHgFKIVQgsDapugbuOptNd9OOunN/HAkzmmTnZELx1kNCK0rSdUYGmiFMM3rRQMAWiyp023LQ==
+
 "@types/aws-lambda@^8.10.72":
   version "8.10.72"
   resolved "https://registry.yarnpkg.com/@types/aws-lambda/-/aws-lambda-8.10.72.tgz#af2a6eeaf39be9674e3856f1870d9d15cf75e2e0"
