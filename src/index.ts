@@ -32,7 +32,7 @@ const responseHeaders = {
 };
 
 const errorResponse = (error: string): APIGatewayProxyResultV2 => ({
-  statusCode: 400,
+  statusCode: 200,
   body: JSON.stringify({ error }),
   headers: responseHeaders,
 });
