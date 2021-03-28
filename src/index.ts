@@ -1,6 +1,6 @@
 import 'source-map-support/register';
 
-import { APIGatewayProxyResultV2 } from 'aws-lambda';
+import type { APIGatewayProxyResultV2 } from 'aws-lambda';
 import {
   S3Client,
   HeadObjectCommand,
