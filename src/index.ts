@@ -52,7 +52,7 @@ const successResponse = (
 const objectExists = (Key: string): Promise<boolean> =>
   s3.send(new HeadObjectCommand({ Bucket: bucket, Key })).then(
     () => true,
-    (err) => {
+    (err: Error) => {
       if ('name' in err && err.name === 'NotFound') {
         return false;
       } else {
@@ -147,7 +147,7 @@ export const handler: AWSLambda.APIGatewayProxyHandlerV2 = async (event) => {
     let message: string;
     if (typeof e === 'string') {
       message = e;
-    } else if ('message' in e && typeof e.message === 'string') {
+    } else if (e instanceof Error) {
       message = e.message;
     } else {
       message = "It didn't work.";
