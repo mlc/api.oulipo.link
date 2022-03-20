@@ -5,7 +5,7 @@
   "author": "mike castleman",
   "license": "MIT",
   "scripts": {
-    "build": "rollup --config"
+    "build": "rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "3.54.1",
