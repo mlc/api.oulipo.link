@@ -7,8 +7,13 @@ import sizes from 'rollup-plugin-sizes';
 const extensions = ['.js', '.jsx', '.ts', '.tsx'];
 
 const plugins = [
-  nodeResolve({ extensions, preferBuiltins: true }),
   commonjs(),
+  nodeResolve({
+    extensions,
+    preferBuiltins: true,
+    browser: false,
+    exportConditions: ['node', 'default', 'module', 'require'],
+  }),
   typescript(),
   json(),
   sizes(),
