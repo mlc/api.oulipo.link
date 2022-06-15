@@ -1,8 +1,8 @@
-import * as crypto from 'crypto';
+import { randomBytes } from 'crypto';
 import createError from 'create-error';
 import { promisify } from 'util';
 
-const randomBytesAsync = promisify(crypto.randomBytes);
+const randomBytesAsync = promisify(randomBytes);
 
 export const RandomGenerationError = createError('RandomGenerationError', {
   code: 'RandomGenerationError',

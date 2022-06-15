@@ -25,9 +25,9 @@ const config: RollupOptions = {
   input: 'src/index.ts',
   output: {
     dir: 'dist',
-    format: 'commonjs',
+    format: 'esm',
     sourcemap: true,
-    entryFileNames: '[name].js',
+    entryFileNames: '[name].mjs',
   },
   plugins,
 };
