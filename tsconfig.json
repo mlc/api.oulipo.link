@@ -3,7 +3,8 @@
   "compilerOptions": {
     "sourceMap": true,
     "noEmit": true,
-    "strict": true
+    "strict": true,
+    "importHelpers": true
   },
   "exclude": ["node_modules"],
   "include": ["src/**/*", "rollup.config.ts"]

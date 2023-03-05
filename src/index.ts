@@ -1,4 +1,3 @@
-import sourceMapSupport from 'source-map-support';
 import type { APIGatewayProxyResultV2 } from 'aws-lambda';
 import {
   S3Client,
@@ -7,8 +6,6 @@ import {
 } from '@aws-sdk/client-s3';
 import { URL } from 'node:url';
 import { randomInt } from 'node:crypto';
-
-sourceMapSupport.install();
 
 const bucket = process.env['OULIPO_BUCKET'];
 const region = process.env['OULIPO_REGION'];
