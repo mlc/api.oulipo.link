@@ -1,13 +1,14 @@
-import 'source-map-support/register';
-
+import sourceMapSupport from 'source-map-support';
 import type { APIGatewayProxyResultV2 } from 'aws-lambda';
 import {
   S3Client,
   HeadObjectCommand,
   PutObjectCommand,
 } from '@aws-sdk/client-s3';
-import { URL } from 'url';
-import secureRandomNumber from './random-number-csprng';
+import { URL } from 'node:url';
+import { randomInt } from 'node:crypto';
+
+sourceMapSupport.install();
 
 const bucket = process.env['OULIPO_BUCKET'];
 const region = process.env['OULIPO_REGION'];
@@ -16,13 +17,9 @@ const cdn_prefix = process.env['OULIPO_CDN_PREFIX'];
 
 const chars = 'abcdfghjijklmnopqrstuvwxyzABCDFGHIJKLMNOPQRSTUVWXYZ0123456789';
 
-const randomChar = async (): Promise<string> =>
-  chars[await secureRandomNumber(0, chars.length - 1)];
+const randomChar = (): string => chars[randomInt(chars.length)];
 
-const generate = (): Promise<string> =>
-  Promise.all(new Array(6).fill(0).map(randomChar)).then((chars) =>
-    chars.join('')
-  );
+const generate = (): string => new Array(6).fill(0).map(randomChar).join('');
 
 const s3 = new S3Client({ region });
 
@@ -81,7 +78,7 @@ const checkAndCreateRedirect = async (url_long: string): Promise<string> => {
   let retry = 0;
   do {
     retry += 1;
-    const id_short = await generate();
+    const id_short = generate();
     const key_short = prefix + '/' + id_short;
     if (await objectExists(key_short)) {
       continue;
@@ -110,15 +107,18 @@ interface Input {
 
 const parseInput = (body: string | undefined): Input | undefined => {
   if (typeof body !== 'string' || body === '') {
+    console.error('no body');
     return undefined;
   }
   try {
     const result = JSON.parse(body);
     if (typeof result !== 'object' || Array.isArray(result)) {
+      console.error('bad kind of body');
       return undefined;
     }
     return result;
-  } catch {
+  } catch (e) {
+    console.error(e);
     return undefined;
   }
 };

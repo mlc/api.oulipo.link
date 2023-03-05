@@ -30,6 +30,7 @@ const config: RollupOptions = {
     entryFileNames: '[name].mjs',
   },
   plugins,
+  external: [/^@aws-sdk\//],
 };
 
 export default config;
