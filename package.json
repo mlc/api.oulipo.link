@@ -14,7 +14,7 @@
     "tslib": "2.6.0"
   },
   "devDependencies": {
-    "@tsconfig/node18": "2.0.1",
+    "@tsconfig/node18": "18.2.0",
     "@types/aws-lambda": "8.10.119",
     "@types/node": "18.16.18",
     "esbuild": "0.18.10",
