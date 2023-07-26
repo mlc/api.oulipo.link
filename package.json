@@ -16,8 +16,8 @@
   "devDependencies": {
     "@tsconfig/node18": "18.2.0",
     "@types/aws-lambda": "8.10.119",
-    "@types/node": "18.16.19",
-    "esbuild": "0.18.13",
+    "@types/node": "18.17.1",
+    "esbuild": "0.18.17",
     "husky": "8.0.3",
     "lint-staged": "13.2.3",
     "prettier": "3.0.0",
