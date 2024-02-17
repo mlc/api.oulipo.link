@@ -10,7 +10,7 @@ await esbuild.build({
   platform: 'node',
   external: ['@aws-sdk'],
   metafile: true,
-  target: 'node18',
+  target: 'node20',
   format: 'esm',
   outExtension: {
     '.js': '.mjs',
