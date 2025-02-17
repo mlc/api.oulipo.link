@@ -10,7 +10,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@aws-sdk/client-s3": "3.740.0",
+    "@aws-sdk/client-s3": "3.750.0",
     "tslib": "2.8.1"
   },
   "devDependencies": {
