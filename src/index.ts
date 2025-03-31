@@ -88,6 +88,7 @@ const checkAndCreateRedirect = async (url_long: string): Promise<string> => {
         WebsiteRedirectLocation: url_long,
         ContentType: 'text/plain',
         CacheControl: 'public, max-age=315576000',
+        IfNoneMatch: '*',
       })
     );
     const ret_url = 'https://' + cdn_prefix + '/' + id_short;
