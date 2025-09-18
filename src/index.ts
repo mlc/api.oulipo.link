@@ -84,7 +84,7 @@ const checkAndCreateRedirect = async (url_long: string): Promise<string> => {
       new PutObjectCommand({
         Bucket: bucket,
         Key: key_short,
-        Body: '',
+        Body: Buffer.alloc(0),
         WebsiteRedirectLocation: url_long,
         ContentType: 'text/plain',
         CacheControl: 'public, max-age=315576000',
