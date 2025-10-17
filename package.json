@@ -15,11 +15,11 @@
   },
   "devDependencies": {
     "@tsconfig/node22": "22.0.2",
-    "@types/aws-lambda": "8.10.155",
-    "@types/node": "22.18.8",
-    "esbuild": "0.25.10",
+    "@types/aws-lambda": "8.10.156",
+    "@types/node": "22.18.11",
+    "esbuild": "0.25.11",
     "husky": "9.1.7",
-    "lint-staged": "16.2.3",
+    "lint-staged": "16.2.4",
     "prettier": "3.6.2",
     "typescript": "5.9.3"
   },
