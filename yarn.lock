@@ -1446,10 +1446,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tsconfig/node22@npm:22.0.2":
-  version: 22.0.2
-  resolution: "@tsconfig/node22@npm:22.0.2"
-  checksum: 10c0/c75e6b9ea86ec2a384adefac0e2f16a6c08202ae5cf6c8c745944396a6931ffb38e742809491c1882d1868c2af1c33744193701779674bfb1e05f6a130045a18
+"@tsconfig/node24@npm:24.0.3":
+  version: 24.0.3
+  resolution: "@tsconfig/node24@npm:24.0.3"
+  checksum: 10c0/68068b503774450d533dda769785356c5722bdc6a3333646fcbcb265e02aafb6d0784619ed85de6d62414df20483428b25bf3d608955ca40b085fb1f12cc26c4
   languageName: node
   linkType: hard
 
@@ -1460,12 +1460,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:22.18.11":
-  version: 22.18.11
-  resolution: "@types/node@npm:22.18.11"
+"@types/node@npm:24.10.8":
+  version: 24.10.8
+  resolution: "@types/node@npm:24.10.8"
   dependencies:
-    undici-types: "npm:~6.21.0"
-  checksum: 10c0/3802f598608638e13ca350fbe2db0db5dde9a0b6704295fa1b6cec6defe24f9baf6a891eee6eaecd016bcd5ea18edecdaf71679d87079fe468913701adb61387
+    undici-types: "npm:~7.16.0"
+  checksum: 10c0/aed2ac8c4a87be5c710f65ccfc57a272829dd00d0f6a687375323b348c55c92a6e7ff3b9d3ec596b1cc09ba2d080ce71b2ec9a67c14d12e04b02b67b14e81a74
   languageName: node
   linkType: hard
 
@@ -1785,9 +1785,9 @@ __metadata:
   resolution: "oulipo-api@workspace:."
   dependencies:
     "@aws-sdk/client-s3": "npm:3.911.0"
-    "@tsconfig/node22": "npm:22.0.2"
+    "@tsconfig/node24": "npm:24.0.3"
     "@types/aws-lambda": "npm:8.10.156"
-    "@types/node": "npm:22.18.11"
+    "@types/node": "npm:24.10.8"
     esbuild: "npm:0.25.11"
     husky: "npm:9.1.7"
     lint-staged: "npm:16.2.4"
@@ -1943,10 +1943,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici-types@npm:~6.21.0":
-  version: 6.21.0
-  resolution: "undici-types@npm:6.21.0"
-  checksum: 10c0/c01ed51829b10aa72fc3ce64b747f8e74ae9b60eafa19a7b46ef624403508a54c526ffab06a14a26b3120d055e1104d7abe7c9017e83ced038ea5cf52f8d5e04
+"undici-types@npm:~7.16.0":
+  version: 7.16.0
+  resolution: "undici-types@npm:7.16.0"
+  checksum: 10c0/3033e2f2b5c9f1504bdc5934646cb54e37ecaca0f9249c983f7b1fc2e87c6d18399ebb05dc7fd5419e02b2e915f734d872a65da2e3eeed1813951c427d33cc9a
   languageName: node
   linkType: hard
 
