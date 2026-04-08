@@ -21,10 +21,10 @@
     "husky": "9.1.7",
     "lint-staged": "16.4.0",
     "prettier": "3.8.1",
-    "typescript": "5.9.3"
+    "typescript": "6.0.2"
   },
   "browserslist": [
-    "node 22"
+    "node 24"
   ],
   "lint-staged": {
     "*.{js,ts,css,md,json}": [
