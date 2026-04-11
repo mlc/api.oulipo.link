@@ -87,9 +87,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-sdk/client-s3@npm:3.1026.0":
-  version: 3.1026.0
-  resolution: "@aws-sdk/client-s3@npm:3.1026.0"
+"@aws-sdk/client-s3@npm:3.1029.0":
+  version: 3.1029.0
+  resolution: "@aws-sdk/client-s3@npm:3.1029.0"
   dependencies:
     "@aws-crypto/sha1-browser": "npm:5.2.0"
     "@aws-crypto/sha256-browser": "npm:5.2.0"
@@ -146,7 +146,7 @@ __metadata:
     "@smithy/util-utf8": "npm:^4.2.2"
     "@smithy/util-waiter": "npm:^4.2.15"
     tslib: "npm:^2.6.2"
-  checksum: 10c0/2cf9d08b4dfb2d45447076ebbafad894c54024535f4429304eeadb0122d76bf4218ecab475826fd2117abfa89e863aefdf7274a66a9984f895030a8d602c2b21
+  checksum: 10c0/61d3ef0312eb3f81d7ad54a3bcac0e872658b21c18e51506c1e4b0b352d67a61189b8a3ba9514b2db6489c2537926f03e094cd603b76974730c8859d87605d1c
   languageName: node
   linkType: hard
 
@@ -1724,7 +1724,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "oulipo-api@workspace:."
   dependencies:
-    "@aws-sdk/client-s3": "npm:3.1026.0"
+    "@aws-sdk/client-s3": "npm:3.1029.0"
     "@tsconfig/node24": "npm:24.0.4"
     "@types/aws-lambda": "npm:8.10.161"
     "@types/node": "npm:24.12.2"
